@@ -1,0 +1,1 @@
+This is a repository of projects for Udacity's AI Nanodegree, Term 2.
