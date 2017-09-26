@@ -14,7 +14,7 @@ def window_transform_series(series, window_size):
     X = []
     y = []
 
-    for j in range(len(series)-window_size-1):
+    for j in range(len(series)-window_size):
         X.append(series[j:(j+window_size)])
         y.append(series[j+window_size])
 
@@ -51,7 +51,7 @@ def window_transform_text(text, window_size, step_size):
     inputs = []
     outputs = []
 
-    for j in range(0,len(text)-window_size-1,step_size):
+    for j in range(0,len(text)-window_size,step_size):
         inputs.append(text[j:(j+window_size)])
         outputs.append(text[j+window_size])
 
